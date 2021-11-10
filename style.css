@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.kokuban {
+  width: 50%;
+  height: 240px;
+  padding: 16px 0;
+  background-position: center;
+  background-image: url(./kyoushitsu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input,
+textarea,
+button {
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+button {
+  display: block;
+  background: skyblue;
+  border: 0;
+  margin: 20px;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 12px;
+}
+input,
+textarea {
+  background-color: transparent;
+  color: #fff;
+  resize: none;
+}
+
+.table {
+  width: 20%;
+  height: 180px;
+  padding: 1rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./tukue.png);
+  font-size: 1.5rem;
+}

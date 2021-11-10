@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>課題No.1 席替え</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <div class="kokuban">
+          <h1>席替えアプリ</h1>
+          行<input type="number" name="gyou" id="gyou" min="1" max="6" value="1" /> 列<input
+            type="number"
+            name="retu"
+            id="retu"
+            min="1"
+            max="3"
+            value="1"
+          />
+          席数：<span id="total"></span> <br />
+          メンバー：<br />
+          <textarea
+            name="mebber"
+            id="member"
+            cols="36"
+            rows="4"
+            placeholder="カンマ(,)区切りでメンバーの名前を入力"
+          ></textarea>
+        </div>
+        <div class="btn-group">
+          <button onclick="sekigae()">席替え</button>
+        </div>
+      </div>
+      <div class="flex" id="tables">
+        <div class="table"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
