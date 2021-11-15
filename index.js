@@ -47,9 +47,8 @@ function sekigae() {
   });
   Tables.innerHTML = table;
 
-  const tableStyle = document.getElementsByClassName('table');
-  for (var i = 0; i < tableStyle.length; i++) {
-    tableStyle[i].style.width = 100 / Gyou.value + '%';
-    tableStyle[i].style.height = 100 / Gyou.value + 'vh';
-  }
+  const tableStyle = document.getElementById('tables');
+  console.log(tableStyle);
+  tableStyle.style.width = Gyou.value * 200 + 'px';
+  // tableStyle[i].style.height = 100 / Gyou.value + 'vh';
 }
