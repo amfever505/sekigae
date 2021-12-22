@@ -32,9 +32,10 @@ function sekigae() {
       membersList.push('');
     }
   } else if (membersList.length > result.innerHTML) {
-    alert('error');
+    alert(membersList.length - result.innerHTML + '人座れないよ...(>_<")');
     Gyou.value = 1;
     Retu.value = 1;
+    result.innerHTML = 1;
     Members.value = '';
     return;
   }
